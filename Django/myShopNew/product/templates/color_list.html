@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<input type="hidden" name="sizeid" id="sizeid" value="{{ size_id }}">
+<span class="small text-uppercase text-gray mr-4 no-select">Color</span>
+<select name="color" id="color" value="{{ color.color_id }}">
+    {% for color in colors %}
+    <option>
+        {{ color.color.name }}</option>
+    {% endfor %}
+</select>
